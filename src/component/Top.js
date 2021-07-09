@@ -9,10 +9,16 @@ export default function Top() {
           <img
             src="/images/LOGO_SOLO.png"
             alt="logo"
-            style={{ display: 'block', width: 80 }}
+            style={{
+              display: 'block',
+              width: 80,
+              height: '88%',
+            }}
           />
         </div>
-        <Header as="h1">커넵</Header>
+        <Header as="h1" style={{ fontWeight: 'bolder' }}>
+          Ubueatu
+        </Header>
       </div>
       <Gnb />
     </div>
