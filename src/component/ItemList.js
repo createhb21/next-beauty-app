@@ -23,7 +23,7 @@ export default function ItemList({ list }) {
                         {item.category} {item.product_type}
                       </span>
                       <strong className={styles.num_price}>
-                        {`${item.price}`}
+                        ${item.price}
                       </strong>
                     </div>
                   </a>
