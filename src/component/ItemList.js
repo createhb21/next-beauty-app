@@ -10,7 +10,7 @@ export default function ItemList({ list }) {
           {list &&
             list.map((item) => (
               <Grid.Column key={item.id}>
-                <Link href="/view/[id]" as={`/view/${item.id}`}>
+                <Link href="/detail/[id]" as={`/detail/${item.id}`}>
                   <a>
                     <div className={styles.wrap}>
                       <img
@@ -22,7 +22,9 @@ export default function ItemList({ list }) {
                       <span className={styles.txt_info}>
                         {item.category} {item.product_type}
                       </span>
-                      <strong className={styles.num_price}>{item.price}</strong>
+                      <strong className={styles.num_price}>
+                        {`${item.price}`}
+                      </strong>
                     </div>
                   </a>
                 </Link>
